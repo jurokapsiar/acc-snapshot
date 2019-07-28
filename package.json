@@ -6,12 +6,16 @@
     "type": "git",
     "url": "https://github.com/jurokapsiar/acc-snapshot.git"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "files": [
     "pkg"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "pack build"
+    "build": "pack build",
+    "release": "release-it"
   },
   "keywords": [
     "accessibility",
@@ -40,6 +44,7 @@
     "@pika/pack": "^0.4.0",
     "@pika/plugin-build-web": "^0.5.1",
     "@pika/plugin-standard-pkg": "^0.5.1",
-    "@pika/types": "^0.5.1"
+    "@pika/types": "^0.5.1",
+    "release-it": "^12.3.4"
   }
 }
