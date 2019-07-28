@@ -1,0 +1,45 @@
+{
+  "name": "acc-snapshot",
+  "version": "0.1.0",
+  "description": "Creates accessibility snapshot from DOM and AOM",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jurokapsiar/acc-snapshot.git"
+  },
+  "files": [
+    "pkg"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pack build"
+  },
+  "keywords": [
+    "accessibility",
+    "snapshot",
+    "a11y",
+    "AOM"
+  ],
+  "author": "Juraj Kapsiar <jurokapsiar@gmail.com>",
+  "license": "MIT",
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg",
+        {
+          "exclude": [
+            "__tests__/**/*"
+          ]
+        }
+      ],
+      [
+        "@pika/plugin-build-web"
+      ]
+    ]
+  },
+  "devDependencies": {
+    "@pika/pack": "^0.4.0",
+    "@pika/plugin-build-web": "^0.5.1",
+    "@pika/plugin-standard-pkg": "^0.5.1",
+    "@pika/types": "^0.5.1"
+  }
+}
