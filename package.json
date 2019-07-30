@@ -15,7 +15,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "pack build",
-    "release": "release-it"
+    "releaseit": "release-it --no-npm.publish",
+    "release": "echo run npm publish . --tag latest --dry-run in pkg/ directory"
   },
   "keywords": [
     "accessibility",
