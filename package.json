@@ -1,6 +1,6 @@
 {
   "name": "acc-snapshot",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Creates accessibility snapshot from DOM and AOM",
   "repository": {
     "type": "git",
